@@ -1,4 +1,7 @@
 package solver;
+
+import model.SCPModel;
+import util.ElementSet;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -20,6 +23,10 @@ public abstract class GreedySolver {
 	protected double _objFn;          // objective function value (*total cost sum* of all sets used)
 	protected double _coverage;       // actual coverage fraction achieved
 	protected long _compTime;         // computation time (ms)
+
+	protected TreeSet<ElementSet> _solnSets; // could use array instead
+	protected SortedSet<Integer> _elementsNotCovered; // set of the elements currently not covered by solution
+	protected boolean _solved;        // whether or not the model has been solved
 	
 	// Basic setter (only one needed)
 	public void setMinCoverage(double alpha) { _alpha = alpha; }
@@ -33,6 +40,10 @@ public abstract class GreedySolver {
 	public String getName() { return _name; }
 		
 	// TODO: Add any helper methods you need
+
+	public void reset() {
+		// TODO: you need to compelte this method to reset the class
+	}
 	
 	/** Run the simple greedy heuristic -- add the next best set until either
 	 *  (1) The coverage level is reached, or 

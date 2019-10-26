@@ -1,0 +1,203 @@
+Weighted SCP model:
+---------------------
+Number of elements (n): 10
+Number of sets (m): 6
+
+Set details:
+----------------------------------------------------------
+Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Set ID:   2   Cost:   2.00   Element IDs: [1, 5, 9]
+Set ID:   3   Cost:   2.00   Element IDs: [5, 7, 9]
+Set ID:   4   Cost:   5.00   Element IDs: [2, 4, 6, 8, 100]
+Set ID:   5   Cost:   2.00   Element IDs: [2, 6, 100]
+Set ID:   6   Cost:   2.00   Element IDs: [4, 8]
+
+Running 'Coverage'...
+- Selected: Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Done.
+
+'Coverage' results:
+'Coverage'   Time to solve: 1ms
+'Coverage'   Objective function value: 3.00
+'Coverage'   Coverage level: 50.00% (50.00% minimum)
+'Coverage'   Number of sets selected: 1
+'Coverage'   Sets selected: 1 
+
+Coverage                            1         3.0000            50.00
+Running 'Cost'...
+- Selected: Set ID:   2   Cost:   2.00   Element IDs: [1, 5, 9]
+- Selected: Set ID:   3   Cost:   2.00   Element IDs: [5, 7, 9]
+- Selected: Set ID:   5   Cost:   2.00   Element IDs: [2, 6, 100]
+Done.
+
+'Cost' results:
+'Cost'   Time to solve: 1ms
+'Cost'   Objective function value: 6.00
+'Cost'   Coverage level: 70.00% (50.00% minimum)
+'Cost'   Number of sets selected: 3
+'Cost'   Sets selected: 2 3 5 
+
+Cost                                1         6.0000            70.00
+Running 'Chvatal'...
+- Selected: Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Done.
+
+'Chvatal' results:
+'Chvatal'   Time to solve: 0ms
+'Chvatal'   Objective function value: 3.00
+'Chvatal'   Coverage level: 50.00% (50.00% minimum)
+'Chvatal'   Number of sets selected: 1
+'Chvatal'   Sets selected: 1 
+
+Chvatal                             0         3.0000            50.00
+
+Alpha: 50.00%
+
+Algorithm                   Time (ms)     Obj Fn Val     Coverage (%)
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Coverage                            1         3.0000            50.00
+Cost                                1         6.0000            70.00
+Chvatal                             0         3.0000            50.00
+Category winner               Chvatal       Coverage             Cost
+---------------------------------------------------------------------
+
+Overall winner: Unclear
+
+==========================================================================
+
+Weighted SCP model:
+---------------------
+Number of elements (n): 10
+Number of sets (m): 6
+
+Set details:
+----------------------------------------------------------
+Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Set ID:   2   Cost:   2.00   Element IDs: [1, 5, 9]
+Set ID:   3   Cost:   2.00   Element IDs: [5, 7, 9]
+Set ID:   4   Cost:   5.00   Element IDs: [2, 4, 6, 8, 100]
+Set ID:   5   Cost:   2.00   Element IDs: [2, 6, 100]
+Set ID:   6   Cost:   2.00   Element IDs: [4, 8]
+
+Running 'Coverage'...
+- Selected: Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Done.
+
+'Coverage' results:
+'Coverage'   Time to solve: 1ms
+'Coverage'   Objective function value: 3.00
+'Coverage'   Coverage level: 50.00% (30.00% minimum)
+'Coverage'   Number of sets selected: 1
+'Coverage'   Sets selected: 1 
+
+Coverage                            1         3.0000            50.00
+Running 'Cost'...
+- Selected: Set ID:   2   Cost:   2.00   Element IDs: [1, 5, 9]
+Done.
+
+'Cost' results:
+'Cost'   Time to solve: 1ms
+'Cost'   Objective function value: 2.00
+'Cost'   Coverage level: 30.00% (30.00% minimum)
+'Cost'   Number of sets selected: 1
+'Cost'   Sets selected: 2 
+
+Cost                                1         2.0000            30.00
+Running 'Chvatal'...
+- Selected: Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Done.
+
+'Chvatal' results:
+'Chvatal'   Time to solve: 0ms
+'Chvatal'   Objective function value: 3.00
+'Chvatal'   Coverage level: 50.00% (30.00% minimum)
+'Chvatal'   Number of sets selected: 1
+'Chvatal'   Sets selected: 1 
+
+Chvatal                             0         3.0000            50.00
+
+Alpha: 30.00%
+
+Algorithm                   Time (ms)     Obj Fn Val     Coverage (%)
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Coverage                            1         3.0000            50.00
+Cost                                1         2.0000            30.00
+Chvatal                             0         3.0000            50.00
+Category winner               Chvatal           Cost         Coverage
+---------------------------------------------------------------------
+
+Overall winner: Unclear
+
+==========================================================================
+
+Weighted SCP model:
+---------------------
+Number of elements (n): 10
+Number of sets (m): 6
+
+Set details:
+----------------------------------------------------------
+Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+Set ID:   2   Cost:   2.00   Element IDs: [1, 5, 9]
+Set ID:   3   Cost:   2.00   Element IDs: [5, 7, 9]
+Set ID:   4   Cost:   5.00   Element IDs: [2, 4, 6, 8, 100]
+Set ID:   5   Cost:   2.00   Element IDs: [2, 6, 100]
+Set ID:   6   Cost:   2.00   Element IDs: [4, 8]
+
+Running 'Coverage'...
+- Selected: Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+- Selected: Set ID:   4   Cost:   5.00   Element IDs: [2, 4, 6, 8, 100]
+Done.
+
+'Coverage' results:
+'Coverage'   Time to solve: 1ms
+'Coverage'   Objective function value: 8.00
+'Coverage'   Coverage level: 100.00% (90.00% minimum)
+'Coverage'   Number of sets selected: 2
+'Coverage'   Sets selected: 1 4 
+
+Coverage                            1         8.0000           100.00
+Running 'Cost'...
+- Selected: Set ID:   2   Cost:   2.00   Element IDs: [1, 5, 9]
+- Selected: Set ID:   3   Cost:   2.00   Element IDs: [5, 7, 9]
+- Selected: Set ID:   5   Cost:   2.00   Element IDs: [2, 6, 100]
+- Selected: Set ID:   6   Cost:   2.00   Element IDs: [4, 8]
+Done.
+
+'Cost' results:
+'Cost'   Time to solve: 2ms
+'Cost'   Objective function value: 8.00
+'Cost'   Coverage level: 90.00% (90.00% minimum)
+'Cost'   Number of sets selected: 4
+'Cost'   Sets selected: 2 3 5 6 
+
+Cost                                2         8.0000            90.00
+Running 'Chvatal'...
+- Selected: Set ID:   1   Cost:   3.00   Element IDs: [1, 3, 5, 7, 9]
+- Selected: Set ID:   5   Cost:   2.00   Element IDs: [2, 6, 100]
+- Selected: Set ID:   6   Cost:   2.00   Element IDs: [4, 8]
+Done.
+
+'Chvatal' results:
+'Chvatal'   Time to solve: 3ms
+'Chvatal'   Objective function value: 7.00
+'Chvatal'   Coverage level: 100.00% (90.00% minimum)
+'Chvatal'   Number of sets selected: 3
+'Chvatal'   Sets selected: 1 5 6 
+
+Chvatal                             3         7.0000           100.00
+
+Alpha: 90.00%
+
+Algorithm                   Time (ms)     Obj Fn Val     Coverage (%)
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Coverage                            1         8.0000           100.00
+Cost                                2         8.0000            90.00
+Chvatal                             3         7.0000           100.00
+Category winner              Coverage        Chvatal         Coverage
+---------------------------------------------------------------------
+
+Overall winner: Unclear
