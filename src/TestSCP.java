@@ -45,9 +45,9 @@ public class TestSCP {
 		List<GreedySolver> solvers = Arrays.asList(new GreedySolver[] {CoverageMethod, CostMethod, ChvatalMethod});
 		
 		printComparison(solvers, model, 0.5);
-		System.out.println("==========================================================================");
+		System.out.println("==========================================================================\n");
 		printComparison(solvers, model, 0.3);
-		System.out.println("==========================================================================");
+		System.out.println("==========================================================================\n");
 		printComparison(solvers, model, 0.9);
 	}
 		
