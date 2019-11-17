@@ -17,8 +17,9 @@ public class GreedyCoverageSolver extends GreedySolver {
      
      int maxcount= Integer.MIN_VALUE; 
      for (ElementSet es: _model.getElementSetIterable()){ //for each element set in the treeset of element sets
-       for(int e : es.getElementIterable()){ //for each element in the treeset of elements
-           count = 0; 
+         count = 0;
+         for(int e : es.getElementIterable()){ //for each element in the treeset of elements
+            
            if (_elementsNotCovered.contains(e)){
                count++;  
            }

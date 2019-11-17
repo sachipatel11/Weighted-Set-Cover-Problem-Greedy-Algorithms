@@ -56,6 +56,8 @@ public abstract class GreedySolver {
         _objFn = 0.0;
         _coverage = 0.0;
         _compTime = 0;
+        _solnSets = new TreeSet <ElementSet>();
+        _elementsNotCovered = (TreeSet<Integer>) _model.getUniverse();
 	}
 	
 	/** Run the simple greedy heuristic -- add the next best set until either
@@ -68,8 +70,7 @@ public abstract class GreedySolver {
 		reset();
 		
 		// TODO: Preliminary initializations
-                _solnSets = new TreeSet <ElementSet>();
-                _elementsNotCovered = (TreeSet<Integer>) _model.getUniverse();
+                
                         
 		// Begin the greedy selection loop
 		long start = System.currentTimeMillis();
@@ -82,15 +83,16 @@ public abstract class GreedySolver {
 		//
 		int num_to_cover = (int)Math.ceil(_alpha * _model.getNumOfElems()); 
 		int num_can_leave_uncovered = _model.getNumOfElems() - num_to_cover; //#of elems in universe - what u have to cover
-                
+                //boolean _solved = false;
 		//
 		 while ( _elementsNotCovered.size() > num_can_leave_uncovered 
 		        && !(_elementsNotCovered.isEmpty())){
+                     ElementSet best = nextBestSet();
                      if (nextBestSet() == null){
                          break;
                         
                      }else{
-                         ElementSet best = nextBestSet();
+                        
                         _solnSets.add(best);
                         _objFn += best.getCost();
                         _elementsNotCovered.removeAll(best.getElem());

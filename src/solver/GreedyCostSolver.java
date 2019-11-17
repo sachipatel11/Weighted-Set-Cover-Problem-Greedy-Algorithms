@@ -15,22 +15,24 @@ public class GreedyCostSolver extends GreedySolver {
     @Override 
     public ElementSet nextBestSet(){
         ElementSet bestSet = null;
-        int count = 0;
-
+        double cost = 0;
+        boolean covers = false;
         
         
        double lowCost= Double.MAX_VALUE;
        for (ElementSet es: _model.getElementSetIterable()){ //for each element set in the treeset of element sets
-           count=0; 
+           //count=0; 
         for(int e : es.getElementIterable()){ //for each element in the treeset of elements
             
            if (_elementsNotCovered.contains(e)){
-               count ++; 
+               covers=true;
+               cost=es.getCost(); 
+               break;
            }
        }
         //cost=es.getCost();
-        if (count > 0 && es.getCost()<lowCost){
-            lowCost=es.getCost();
+        if (cost<lowCost && covers == true){
+            lowCost=cost;
             bestSet=es;
         } 
         

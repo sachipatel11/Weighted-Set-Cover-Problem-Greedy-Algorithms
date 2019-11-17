@@ -11,6 +11,7 @@ import solver.GreedySolver;
 
 import java.io.*;
 
+
 /** Example testing class, identical to TestSCPSoln except for classes used.
  * 
  * @author ssanner@mie.utoronto.ca
@@ -43,7 +44,7 @@ public class TestSCP {
 		ChvatalSolver ChvatalMethod = new ChvatalSolver();
 		
 		List<GreedySolver> solvers = Arrays.asList(new GreedySolver[] {CoverageMethod, CostMethod, ChvatalMethod});
-		
+		 
 		printComparison(solvers, model, 0.5);
 		System.out.println("==========================================================================\n");
 		printComparison(solvers, model, 0.3);

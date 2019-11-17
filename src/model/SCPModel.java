@@ -7,7 +7,6 @@ import java.util.TreeSet;
 
 // Holds all SCP model data
 public class SCPModel {
-    
 
     // TODO: add any instance variables needed to make this class work as expected
     // TODO: add any methods needed to complelte the expected functionality
@@ -44,6 +43,7 @@ public class SCPModel {
         return new TreeSet <Integer>(_universe);
         
     }
+    
 
     // print out model details
     @Override
