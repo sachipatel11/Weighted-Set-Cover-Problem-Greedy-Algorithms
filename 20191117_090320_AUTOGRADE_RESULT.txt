@@ -1,0 +1,21 @@
+FailedTestCases:
+test16: ../files/SCP_L_1000-800.txt
+
+Computation Time NOT EQUAL OR LESS THAN REQUIRED
+
+Solution Used Time: 237
+User Used Time: 2081
+=========
+
+
+Computation Time NOT EQUAL OR LESS THAN REQUIRED
+
+Solution Used Time: 166
+User Used Time: 1838
+=========
+
+
+
+Your grade for this assignment: 8.0 out of 8.5
+If you think there is a grading mistake,
+Please consult the TA during office hours.
