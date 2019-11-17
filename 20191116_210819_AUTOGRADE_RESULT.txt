@@ -1,0 +1,36 @@
+FailedTestCases:
+test3: ../files/SCP_S_20-10.txt
+This single test 3 took too long to run
+test4: ../files/SCP_S_50-20.txt
+This single test 4 took too long to run
+test5: ../files/SCP_S_50-30.txt
+This single test 5 took too long to run
+test6: ../files/SCP_M_100-100.txt
+This single test 6 took too long to run
+test7: ../files/SCP_M_100-200.txt
+This single test 7 took too long to run
+test8: ../files/SCP_M_100-300.txt
+This single test 8 took too long to run
+test9: ../files/SCP_M_100-500.txt
+This single test 9 took too long to run
+test10: ../files/SCP_M_250-100.txt
+This single test 10 took too long to run
+test11: ../files/SCP_M_250-200.txt
+This single test 11 took too long to run
+test12: ../files/SCP_M_250-300.txt
+This single test 12 took too long to run
+test13: ../files/SCP_M_500-200.txt
+This single test 13 took too long to run
+test14: ../files/SCP_M_500-500.txt
+This single test 14 took too long to run
+test15: ../files/SCP_L_1000-400.txt
+This single test 15 took too long to run
+test16: ../files/SCP_L_1000-800.txt
+This single test 16 took too long to run
+test16: ../files/SCP_L_1000-800.txt
+This single test 17 took too long to run
+
+
+Your grade for this assignment: 1.0 out of 8.5
+If you think there is a grading mistake,
+Please consult the TA during office hours.
